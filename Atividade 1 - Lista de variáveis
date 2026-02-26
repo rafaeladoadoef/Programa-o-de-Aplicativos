@@ -1,0 +1,134 @@
+import java.util.Scanner;
+
+public class Atividade_1 {
+    public static void main(String[] args) throws Exception {
+
+    Scanner sc = new Scanner(System.in);
+
+    System.out.print("Digite um valor inteiro: ");
+    int valor = sc.nextInt();
+    System.out.println("o valor e: " + valor);
+
+    System.out.print("Digite o primeiro numero: ");
+    int num1 = sc.nextInt();
+
+    System.out.print("Digite o segundo numero: ");
+    int num2 = sc.nextInt();
+
+    int soma = num1 + num2;
+    System.out.println("Soma dos numeros: " + soma);
+
+    sc.nextLine(); 
+
+    System.out.print("Digite um nome: ");
+    String nome = sc.nextLine();
+
+    System.out.print("Digite a idade: ");
+    int idade = sc.nextInt();
+    System.out.println(nome + " Tem " + idade + " anos de idade ");
+
+    System.out.print("Digite um numero para calcular o dobro: ");
+    int numerof = sc.nextInt();
+    int dobro = numerof * 2;
+    System.out.println("o dobro de " + numerof + " e: " + dobro);
+
+    System.out.print("Digite um valor decimal: ");
+    double valord = sc.nextDouble();
+    System.out.println("o valor e: " + valord);
+
+    System.out.print("Digite o primeiro numero real: ");
+    double real = sc.nextDouble();
+
+    System.out.print("Digite o segundo numero real: ");
+    double real2 = sc.nextDouble();
+
+    double media = (real + real2) / 2;
+    System.out.println("A media entre os numeros é: " + media);
+
+    System.out.print("Digite o valor do produto: ");
+    double valorProd = sc.nextDouble();
+
+    System.out.print("Digite a quantidade: ");
+    double quantProd = sc.nextDouble();
+
+    double valorCompra = valorProd * quantProd;
+    System.out.println("O valor total da compra é: " + valorCompra);
+
+    sc.nextLine(); 
+
+    System.out.print("Digite o primeiro nome: ");
+    String nome2 = sc.nextLine();
+
+    System.out.print("Digite o segundo nome: ");
+    String nome3 = sc.nextLine();
+    System.out.println("Bem vindos a Pe de Serra, " + nome2 + " e " + nome3);
+
+    System.out.print("Digite a cidade: ");
+    String Cidade = sc.nextLine();
+
+    System.out.print("Digite um nome: ");
+    String nome4 = sc.nextLine();
+    System.out.println("Boas vindas a " + Cidade + ", " + nome4);
+
+    System.out.print("É criança? (true/false): ");
+    boolean isCrianca = sc.nextBoolean();
+    System.out.println(isCrianca);
+    
+    System.out.print("Digite um numero: ");
+    int numero = sc.nextInt();
+    System.out.print("O numero e par? (true/false): ");
+    boolean isPar = (numero % 2 == 0);
+    System.out.println("O numero e par? " + isPar);
+    
+
+    sc.nextLine();
+
+    System.out.print("Digite o genero (F/M): ");
+    char genero = sc.nextLine().charAt(0);
+    System.out.println("O genero e: " + genero);
+
+    System.out.print("Digite uma inicial: ");
+    char inicial = sc.nextLine().charAt(0);
+    System.out.println("A inicial e: " + inicial);
+
+    System.out.print("Digite o nome: ");
+    String nomer = sc.nextLine();
+
+    System.out.print("Digite a idade: ");
+    int idader = sc.nextInt();
+
+    System.out.print("Digite a altura: ");
+    double alturar = sc.nextDouble();
+    System.out.println(nomer + " tem " + idader + " anos de idade e " + alturar + " de altura.");
+
+    sc.nextLine(); 
+
+    System.out.print("Nome do aluno: ");
+    String nomeAluno = sc.nextLine();
+
+    System.out.print("Nota 1: ");
+    double nota1 = sc.nextDouble();
+
+    System.out.print("Nota 2: ");
+    double nota2 = sc.nextDouble();
+
+    double mediar = (nota1 + nota2) / 2;
+    System.out.println("A media do aluno " + nomeAluno + " e " + mediar);
+
+    sc.nextLine(); // limpar buffer
+
+    System.out.print("Nome do produto: ");
+    String nomeProdu = sc.nextLine();
+
+    System.out.print("Preco do produto: ");
+    double precoProdu = sc.nextDouble();
+
+    System.out.print("Quantidade: ");
+    int quantProdu = sc.nextInt();
+
+    double valorProdu = precoProdu * quantProdu;
+    System.out.println("Valor a ser pago: " + valorProdu);
+
+    sc.close();
+    }
+}
