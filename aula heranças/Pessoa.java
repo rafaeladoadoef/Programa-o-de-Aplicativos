@@ -11,7 +11,7 @@ class Pessoa {
         this.idade=idade;
     }
 
-    public String getName(){
+    public String getNome(){
         return this.nome;
     }
 
